@@ -350,6 +350,7 @@ Whilst waiting for the build to complete, we can take a look round other DevCS f
 * Enter “cafesupremo” in the Application Name field
 * Click New Deployment Target
 * Enter “129.156.113.127” in the Host field
+* Click SSH Tunnel
 * Enter “weblogic” and “welcome1” as the Username and Password
 * Click Find Targets
 
