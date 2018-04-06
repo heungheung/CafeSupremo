@@ -428,7 +428,7 @@ To enable a developer to develop code and commit it to the Git repository in Dev
 
 # Integrating the Reward Service
 
-As you saw with our JET UI, we had greyed the Reward option as the backend Reward microservice has not been completed. Just to show you how easy it is to develop and rollout new features in a cloud native application, a developer have been developing the Reward Service in node.js in parallel to the JET UI. This Reward Service could be imported into another Developer Cloud Project and developed in isolation.
+As you saw with our JET UI, we had greyed the Reward option as the backend Reward microservice has not been completed. Just to show you how easy it is to develop and rollout new features in a cloud native application, a developer have been developing the Reward Service in Node.js in parallel to the JET UI. This Reward Service could be imported into another Developer Cloud Project and developed in isolation.
 
 Once the service is ready, we can just bring it online. Unlike the traditional waterfall programming model where the whole application would have to be built and deployed as one monolithic application. We can build, deploy, test small pieces of code or microservices and release them independently.
 
@@ -446,7 +446,7 @@ Let’s see how we can automate the CICD process by making a code change in the 
 * Switch to Brackets
 * Open src->js->appController.js
 * Locate line 46
-* Replace "false" with "true" on Rewards
+* Replace "true" with "false" on Rewards
 * Save file
 * Click Commit
 * Enter commit message
