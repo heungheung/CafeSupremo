@@ -454,11 +454,11 @@ Let’s see how we can automate the CICD process by making a code change in the 
 
 # Step 33
 
-* Push changes to DevCS Git repo
+* Enter DevCS password to push changes to DevCS Git repo
 
 ![](images/pushtoremote.png)
 
-* Click Git Push
+* Click OK
 * Switch back to DevCS project home
 
 # Step 34
