@@ -9,11 +9,11 @@ This repository includes the infrastructure and pipeline definition for continuo
 
 This demo showcases the following:
 
-•	Continuous Integration and Continuous Delivery through automation in Oracle Developer Cloud Service
-•	Task creation using Oracle Developer Cloud Service Issue tracking system
-•	Working with Open Source tools
-•	Pushing the changes from a remote repository
-•	Scaling up and scaling out of ACCS and JCS
+*	Continuous Integration and Continuous Delivery through automation in Oracle Developer Cloud Service
+*	Task creation using Oracle Developer Cloud Service Issue tracking system
+*	Working with Open Source tools
+*	Pushing the changes from a remote repository
+*	Scaling up and scaling out of ACCS and JCS
 
 
 # Time to Complete
@@ -25,15 +25,15 @@ Approximately 30 minutes
 
 Oracle Developer Cloud Service is a cloud-based hosting environment for software development projects. It is available as a web interface accessible from a web browser. Oracle Developer Cloud Service provides the following features and services:
 
-•	Project creation, configuration, and user management
-•	Agile development
-•	Integrated issue tracking for tasks, bugs, and enhancements
-•	Source code repository through Git to store your application source
-•	Maven repositories to store your application dependencies and libraries
-•	Code Review enabled with Team Collaboration
-•	Continuous software build integration
-•	Wiki collaboration
-•	Deployment to an Oracle Java Cloud Service and Application Container Cloud Service
+*	Project creation, configuration, and user management
+*	Agile development
+*	Integrated issue tracking for tasks, bugs, and enhancements
+*	Source code repository through Git to store your application source
+*	Maven repositories to store your application dependencies and libraries
+*	Code Review enabled with Team Collaboration
+*	Continuous software build integration
+*	Wiki collaboration
+*	Deployment to an Oracle Java Cloud Service and Application Container Cloud Service
 
 
 # Scenario
