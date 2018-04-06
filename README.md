@@ -276,6 +276,53 @@ Now that we have imported the source code for our JET UI frontend, we can start 
 * Enter “target/cafesupremo.war” in the Files To Archive field
 * Click on Save
 
+# Step 19
+
+* Let’s test the build job configuration by running a build now.
+* Whilst we are waiting for the build to complete, which normally takes about 2 to 3 minutes, we can start configuring the deployment
+
+![](images/runjetbuild.png)
+
+* Click on Build Now
+* Click on Issues tab
+
+# Walkthrough DevCS Features
+
+Whilst waiting for the build to complete, we can take a look round other DevCS features like Issue Tracking, Git, Branching, and Agile.
+
+# Step 20
+
+* Create a new issue
+
+![](images/issuetrack.png)
+
+* Click on New Issues
+* Click on Deploy tab
+
+# Step 21
+
+* The build should have started
+* Check the progress of the build by going into the console
+* Explain the log
+
+![](images/buildprogress.png)
+
+* Click on JETUI_Build job
+* Click on Console icon
+* Click on Code tab
+
+# Step 22
+
+* Walkthrough the branching for bug fixes, new features and runtime builds
+* Describe the need for branching
+
+![](images/graph.png)
+
+* Click on Logs tab
+* Click on Graph View icon
+*Click on Merge Requests tab
+
+
 
 
 
