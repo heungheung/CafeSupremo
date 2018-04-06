@@ -1,6 +1,48 @@
-# CI/CD Demo - OpenShift Container Platform 3.3
+# CI/CD Demo - CafeSupremo Microservices DevOps
+
+This repository contains the demo script to demonstrate a typical DevOps workflow of a cloud native application using Oracle AppDev Platform. This includes services such as Oracle Developer Cloud Service, Java Cloud Service, Application Container Cloud Service and Database Cloud Service.
+
+This demo will also show how to work with Open Source tools in Oracle Developer Cloud Service for managing your software lifecycle as well as how to build, deploy and promote to different environments. With Continuous Integration and Delivery as core principles, this demo will illustrate how issues are tracked, managed and how to manage releases.
 
 This repository includes the infrastructure and pipeline definition for continuous delivery using Jenkins, Nexus and SonarQube on OpenShift. On every pipeline execution, the code goes through the following steps:
+
+# Time to Complete
+
+Approximately 30 minutes
+
+
+# Background
+
+Oracle Developer Cloud Service is a cloud-based hosting environment for software development projects. It is available as a web interface accessible from a web browser. Oracle Developer Cloud Service provides the following features and services:
+
+•	Project creation, configuration, and user management
+•	Agile development
+•	Integrated issue tracking for tasks, bugs, and enhancements
+•	Source code repository through Git to store your application source
+•	Maven repositories to store your application dependencies and libraries
+•	Code Review enabled with Team Collaboration
+•	Continuous software build integration
+•	Wiki collaboration
+•	Deployment to an Oracle Java Cloud Service and Application Container Cloud Service
+
+
+This demo showcases the following:
+
+•	Continuous Integration and Continuous Delivery through automation in Oracle Developer Cloud Service
+•	Task creation using Oracle Developer Cloud Service Issue tracking system
+•	Working with Open Source tools
+•	Pushing the changes from a remote repository
+•	Scaling up and scaling out of ACCS and JCS
+
+
+#Scenario
+
+You are an application developer who will be developing a brand new cloud native loyalty application for Café Supremo, which will be deployed to the Oracle Cloud. The reason why you wanted to adopt a cloud native approach has partially been driven by the need to go to market quicker, by delivering new features more frequently, but also more reliably. And you are able to do this by developing Microservices that has less dependencies on other services, as well as the footprint being smaller and easier to deploy. What’s also attractive with Microservices is that you can use the best programming language for the job. So, you could end up with a polyglot application. To be able to deliver this new style of cloud native application approach, you will need to adopt the Agile development practice to continuously integrate and deliver these services and features. The application basically consists of two parts:
+•	The user interface that is built using Oracle JET framework, packaged as a WAR file and deployed to a Java Cloud Service instance
+•	The Reward Collection backend service, which is a Microservice written in node.js, packaged as a ZIP file and deployed to an Application Container Cloud Service instance
+
+
+
 
 1. Code is cloned from Gogs, built, tested and analyzed for bugs and bad patterns
 2. The WAR artifact is pushed to Nexus Repository manager
