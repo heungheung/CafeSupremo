@@ -6,7 +6,6 @@ This demo will also show how to work with Open Source tools in Oracle Developer 
 
 This repository includes the infrastructure and pipeline definition for continuous delivery using Jenkins, Nexus and SonarQube on OpenShift. On every pipeline execution, the code goes through the following steps:
 
-
 This demo showcases the following:
 
 *	Continuous Integration and Continuous Delivery through automation in Oracle Developer Cloud Service
@@ -15,13 +14,9 @@ This demo showcases the following:
 *	Pushing the changes from a remote repository
 *	Scaling up and scaling out of ACCS and JCS
 
-
-
 # Time to Complete
 
 Approximately 30 minutes
-
-
 
 # Background
 
@@ -37,8 +32,6 @@ Oracle Developer Cloud Service is a cloud-based hosting environment for software
 *	Wiki collaboration
 *	Deployment to an Oracle Java Cloud Service and Application Container Cloud Service
 
-
-
 # Scenario
 
 You are an application developer who will be developing a brand new cloud native loyalty application for Café Supremo, which will be deployed to the Oracle Cloud. The reason why you want to adopt a cloud native approach has partially been driven by the need to go to market quicker, by delivering new features more frequently, but also more reliably. And you are able to do this by developing Microservices that has less dependencies on other services, as well as the footprint being smaller and easier to deploy. What’s also attractive with Microservices is that you can use the best programming language for the job. So, you could end up with a polyglot application. To be able to deliver this new style of cloud native application approach, you will need to adopt the Agile development practice to continuously integrate and deliver these services and features. The application basically consists of two parts:
@@ -46,23 +39,14 @@ You are an application developer who will be developing a brand new cloud native
 1. The user interface that is built using Oracle JET framework, packaged as a WAR file and deployed to a Java Cloud Service instance
 2. The Reward Collection backend service, which is a Microservice written in node.js, packaged as a ZIP file and deployed to an Application Container Cloud Service instance
 
-
-
 ![](images/architecture.png)
-
-
-
 
 You will use DevCS as the core CI/CD software lifecycle management tool for your Agile development and DevOps pipeline. The Café Supremo project has already been created and populated with both the JET UI and the Reward Service. The latest JET UI is also deployed to a previously provisioned JCS instance and the Reward Collection is deployed to a previously provisioned ACCS instance. The customer data has also been uploaded to a DBCS instance.
 This demo assumes that you will be logging into an Oracle Developer Cloud Service instance that is populated with the Café Supremo project. This demo also requires a desktop environment with Brackets installed.
 
 A project manager will be logging in to an Oracle Developer Cloud Service and manage the Café Supremo project from issue tracking to tracking the build, deploy and release progress.
 
-
-
 ![](images/demoflow.png)
-
-
 
 # What Do You Need?
 
@@ -83,14 +67,9 @@ A project manager will be logging in to an Oracle Developer Cloud Service and ma
 *	Some familiarity with the Git source control system
 *	Some familiarity with Hudson Continuous Integration system
 
-
-
-
 # Iteration 1:   Introducing the Café Supremo Loyalty Application and Oracle Cloud
 
 You are an application developer who will be developing a brand new cloud native loyalty application for Café Supremo, which will be deployed to the Oracle Cloud.
-
-
 
 # Step 1
 
@@ -101,21 +80,13 @@ Introduce the application. The application basically consists of two parts:
 
 The JET UI and the Reward Service are being developed in parallel independent of each other, by two different teams.
 
-
-
 ![](images/cafehome.png)
-
-
-
 
 * Mirror your mobile phone
 * Enter Café Supremo URL - http://xxx.xxx.xxx.xxx/cafesupremo
 * Click on the Menu icon
 
-
-
 # Step 2
-
 
 * Show how this JET UI looks like by going into the Discover and Stores options
 * Highlight that the Rewards Service option has not been completed and hence it is greyed out
@@ -124,28 +95,16 @@ The JET UI and the Reward Service are being developed in parallel independent of
 * Code are stored in separate Git repositories and they are built differently, but manually.
 * We will show how you can improve your team’s productivity and quickly rollout new services by adopting CI/CD in Oracle AppDev Platform
 
-
-
 ![](images/cafemenu.png)
 ![](images/cafemap.png)
 
-
-
 * Click on each option to show what they do and highlight the Reward Service option is greyed as it has not be completed
-
-
-
 
 # Step 3
 
 * Here you are going to be requested to enter the information needed to access your cloud account
 
-
-
 ![](images/oraclecloud.png)
-
-
-
 
 * Enter your Identity Domain
 * Click GO
@@ -153,24 +112,38 @@ The JET UI and the Reward Service are being developed in parallel independent of
 * Enter your Password
 * Click Sign In
 
-
-
 # Step 4
-
-
 
 * At a high level describe the different services; DevCS for Agile and CI/CD, JCS for Java and JET UI, ACCS for polyglot Microservices
 * Mention that DBCS, JCS and ACCS have already been provisioned
 * Customer data has been uploaded to DBCS
 
-
-
 ![](images/clouddashboard.png)
 
+# Working with Projects
 
-
+Think of yourself as the project manager for the Café Supremo Reward application. And you need to bring your JETUI frontend application into our cloud environment. You can do this by bringing your development under the control of Developer Cloud. With the Developer Cloud, you can implement CI/CD and adopt the Agile methodology into your development.
 
 # Step 5
+
+* On the Welcome page, you will see a list of projects hosted in the DevCS
+* Here you can create a new project by clicking New Project.
+
+![](images/projects.png)
+
+* Click “+ New Project”
+
+# Step 6
+
+* We will create a project for the Café Supremo and bring all the components into this project so that we can automate the build and deploy process
+
+![](images/newproject.png)
+
+* Enter the project name “Cafe Supremo”
+* Enter a description
+* Click Next
+
+
 
 
 
