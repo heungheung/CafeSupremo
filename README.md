@@ -43,7 +43,7 @@ You are an application developer who will be developing a brand new cloud native
 1. The user interface that is built using Oracle JET framework, packaged as a WAR file and deployed to a Java Cloud Service instance
 2. The Reward Collection backend service, which is a Microservice written in node.js, packaged as a ZIP file and deployed to an Application Container Cloud Service instance
 
-
+![](images/architecture.png)
 
 
 1. Code is cloned from Gogs, built, tested and analyzed for bugs and bad patterns
