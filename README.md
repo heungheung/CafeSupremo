@@ -183,8 +183,37 @@ Since the development of the JET UI has started already and the source code is b
 
 # Step 10
 
+* Let’s clone an existing CafeSupremo repo, which is currently hosted in a different project
+* This repo can be external and accessible by the public in GitHub
 
+![](images/newrepo.png)
 
+* Enter “CafeSupremo” as the Git repo name
+* Check on “Import existing repository” radio box
+* Enter the external CafeSupremo Git repo URL
+* Enter the credential for external repo
+
+# Step 11
+
+* Once completed, you will see the new CafeSupremo.git repository
+* A new event will also be logged in the recent activities column
+* Now let’s switch to the Build tab to create our first build job
+
+![](images/projecthomeready.png)
+
+* Click on Build tab
+
+# Building the JET UI Application
+
+Now that we have imported the source code for our JET UI frontend, we can start creating our CICD pipeline. So the first task in our CICD pipeline is to build the application. We can create a build job for this. And we want the build to be triggered automatically whenever there is a code change. The default CI engine that comes out of the box in DevCS is Hudson. The build process can be automated and deployed automatically to a designated JCS environment.
+
+# Step 12
+
+* Switch to Build tab and create a new job. There should be no build job initially
+
+![](images/buildhome.png)
+
+* Click on New Job
 
 
 
