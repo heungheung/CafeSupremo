@@ -349,7 +349,7 @@ Whilst waiting for the build to complete, we can take a look round other DevCS f
 * Enter “cafesupremo” in the Configuration Name field
 * Enter “cafesupremo” in the Application Name field
 * Click New Deployment Target
-* Enter “192.158.72.189” in the Host field
+* Enter “129.156.113.127” in the Host field
 * Enter “weblogic” and “welcome1” as the Username and Password
 * Click Find Targets
 
@@ -362,7 +362,7 @@ Whilst waiting for the build to complete, we can take a look round other DevCS f
 * Click on “demo_cluster” radio box
 * Click OK
 
-# Step 26
+# Step 27
 
 * Select the deployment build and automatic deployment
 
@@ -371,6 +371,121 @@ Whilst waiting for the build to complete, we can take a look round other DevCS f
 * Click on “Automatic” radio box
 * Select the default from the dropdown options for Job, Build and Artifact
 * Click Save and Deploy
+
+# Step 28
+
+* The deployment will take place immediately and should take only 20 seconds
+* Highlight that we can create multiple deployments with different target environments
+* The targets can for dev, test, UAT, pre-prod, and prod, etc.
+
+![](images/deploylist.png)
+
+* Go to Café Supremo URL - http://129.156.113.127/cafesupremo
+
+# Step 29
+
+* Verify the application was deployed successfully
+* Point out IP address is the one we deployed to in our deployment script
+
+![](images/cafehome.png)
+
+* Switch back to the mobile phone
+* Click through the screens
+
+# Cloning the Git Repository to Brackets
+
+To enable a developer to develop code and commit it to the Git repository in Developer Cloud, you can use your favourite IDE or a simple text editor with Git command line interface. However, we are going to strike a balance and use something that is pretty lightweight but has built in integration with Git. Brackets is an open source editor written in HTML, CSS, and JavaScript with a primary focus on web development. You can install a Git plug-in to integrate the commit and push process to Developer Cloud.
+
+# Step 30
+
+* Start by cloning the CafeSupremo.git repo from our project
+
+![](images/brackets.png)
+
+* Open Brackets
+* Select “Open Folder …”
+* Change directory
+* Click New Folder
+* Enter “CafeSupremo”
+* Click Open
+
+# Step 31
+
+* Start cloning the CafeSupremo.git from DevCS by providing the Git URL, and DevCS user credentials
+* The cloning will take around 2 to 3 minutes depending on the speed of the network
+* For the sake of time, I will let this continue whilst I go back to my project in Developer Cloud
+* We will come back to this later to show how we commit and push code changes to the DevCS and start the CICD pipeline automatically
+
+![](images/clonerepo.png)
+
+* Click Clone
+* Switch back to DevCS
+* Copy CafeSupremo.git URL
+* Switch back to Brackets
+* Past URL into Git URL field
+* Enter DevCS username and password
+* Switch back to DevCS
+
+# Integrating the Reward Service
+
+As you saw with our JET UI, we had greyed the Reward option as the backend Reward microservice has not been completed. Just to show you how easy it is to develop and rollout new features in a cloud native application, a developer have been developing the Reward Service in node.js in parallel to the JET UI. This Reward Service could be imported into another Developer Cloud Project and developed in isolation.
+
+Once the service is ready, we can just bring it online. Unlike the traditional waterfall programming model where the whole application would have to be built and deployed as one monolithic application. We can build, deploy, test small pieces of code or microservices and release them independently.
+
+Let’s see how we can automate the CICD process by making a code change in the local Git repository and pushing the change back to the Git repo in Developer Cloud. We know the Reward Service is being developed in parallel and they’re ready for integration. We have set a flag in our JETUI code to disable the Reward Service initially. Let me show you how I can enable this in the code and trigger the build and deployment automatically.
+
+# Step 32
+
+* The Git cloning should have completed by now
+* And you should be in the cafesupremo folder
+* Let’s enable the Reward Service by changing a flag in the JETUI
+* Commit change to local clone repo
+
+![](images/appcontroller.png)
+
+* Switch to Brackets
+* Open src->js->appController.js
+* Locate line 46
+* Replace false with true on Rewards
+* Save file
+* Click Commit
+* Enter commit message
+
+# Step 33
+
+* Push changes to DevCS Git repo
+
+![](images/pushtoremote.png)
+
+Click Git Push
+
+* Switch back to DevCS project home
+
+# Step 34
+
+* Changes will be recorded in the project home
+* Should see the build process started
+
+![](images/runningbuild.png)
+
+* Click on the JETUI_Build job
+
+# Step 35
+
+* You can examine a running build by opening the build console
+* So you will know exactly what the build is doing and how far it has gone
+
+![](images/buildconsole.png)
+
+* Click on the Console icon next to the running build
+* Click on Deploy tab
+
+# Release, Promotion and Scaling
+
+In a real world scenario where you need to continuously integrate and deploy your application to a test environment, you also need to promote it to the UAT and production environments. You can do this in DevCS by creating multiple deployment configuration for different environments. Release can also be managed and recorded in DevCS. With multiple releases, we also need a better way to manage our code. Branching is common practice in development for releasing multiple versions of an application
+We can scale up or scale out of our JET UI application in JCS as well as the Rewards Microservice in ACCS.
+
+
 
 
 
