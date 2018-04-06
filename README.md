@@ -16,9 +16,11 @@ This demo showcases the following:
 *	Scaling up and scaling out of ACCS and JCS
 
 
+
 # Time to Complete
 
 Approximately 30 minutes
+
 
 
 # Background
@@ -36,6 +38,7 @@ Oracle Developer Cloud Service is a cloud-based hosting environment for software
 *	Deployment to an Oracle Java Cloud Service and Application Container Cloud Service
 
 
+
 # Scenario
 
 You are an application developer who will be developing a brand new cloud native loyalty application for Café Supremo, which will be deployed to the Oracle Cloud. The reason why you want to adopt a cloud native approach has partially been driven by the need to go to market quicker, by delivering new features more frequently, but also more reliably. And you are able to do this by developing Microservices that has less dependencies on other services, as well as the footprint being smaller and easier to deploy. What’s also attractive with Microservices is that you can use the best programming language for the job. So, you could end up with a polyglot application. To be able to deliver this new style of cloud native application approach, you will need to adopt the Agile development practice to continuously integrate and deliver these services and features. The application basically consists of two parts:
@@ -43,19 +46,43 @@ You are an application developer who will be developing a brand new cloud native
 1. The user interface that is built using Oracle JET framework, packaged as a WAR file and deployed to a Java Cloud Service instance
 2. The Reward Collection backend service, which is a Microservice written in node.js, packaged as a ZIP file and deployed to an Application Container Cloud Service instance
 
+
+
 ![](images/architecture.png)
 
 
-1. Code is cloned from Gogs, built, tested and analyzed for bugs and bad patterns
-2. The WAR artifact is pushed to Nexus Repository manager
-3. A Docker image (_tasks:latest_) is built based on the _Tasks_ application WAR artifact deployed on JBoss EAP 6
-4. The _Tasks_ Docker image is deployed in a fresh new container in DEV project
-5. If tests successful, the DEV image is tagged with the application version (_tasks:7.x_) in the STAGE project
-6. The staged image is deployed in a fresh new container in the STAGE project
 
-The following diagram shows the steps included in the deployment pipeline:
 
-![](images/pipeline.png)
+You will use DevCS as the core CI/CD software lifecycle management tool for your Agile development and DevOps pipeline. The Café Supremo project has already been created and populated with both the JET UI and the Reward Service. The latest JET UI is also deployed to a previously provisioned JCS instance and the Reward Collection is deployed to a previously provisioned ACCS instance. The customer data has also been uploaded to a DBCS instance.
+This demo assumes that you will be logging into an Oracle Developer Cloud Service instance that is populated with the Café Supremo project. This demo also requires a desktop environment with Brackets installed.
+
+A project manager will be logging in to an Oracle Developer Cloud Service and manage the Café Supremo project from issue tracking to tracking the build, deploy and release progress.
+
+
+
+![](images/demoflow.png)
+
+
+
+# What Do You Need?
+
+*	Access to an Oracle Developer Cloud Service instance
+*	Access to an Oracle Application Cloud Service instance
+*	Access to an Oracle Java Cloud Service instance
+*	Access to a mobile phone
+*	One of the following supported browsers:
+    *	Firefox 31 or above
+    *	Chrome 37 (also for Android)
+    *	Safari 7, 8 or 9
+    *	Safari Mobile 5 (iOS)
+*	An installation of Brackets with Bracket Git by Martin Zagora extension installed
+*	An installation to mirror your mobile screen to the projector
+*	Some familiarity with Oracle Java Cloud Service
+*	Some familiarity with Oracle Application Cloud Service
+*	Some familiarity with Brackets
+*	Some familiarity with the Git source control system
+*	Some familiarity with Hudson Continuous Integration system
+
 
 The application used in this pipeline is a JAX-RS application which is available on GitHub and is imported into Gogs during the setup process:
 [https://github.com/OpenShiftDemos/openshift-tasks](https://github.com/OpenShiftDemos/openshift-tasks/tree/eap-7)
