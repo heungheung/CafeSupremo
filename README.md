@@ -138,10 +138,39 @@ The JET UI and the Reward Service are being developed in parallel independent of
 
 # Step 3
 
+* Here you are going to be requested to enter the information needed to access your cloud account
+
+
+
+![](images/oraclecloud.png)
 
 
 
 
+* Enter your Identity Domain
+* Click GO
+* Login with the credentials
+* Enter your Password
+* Click Sign In
+
+
+
+# Step 4
+
+
+
+* At a high level describe the different services; DevCS for Agile and CI/CD, JCS for Java and JET UI, ACCS for polyglot Microservices
+* Mention that DBCS, JCS and ACCS have already been provisioned
+* Customer data has been uploaded to DBCS
+
+
+
+[](images/clouddashboard.png)
+
+
+
+
+# Step 5
 
 
 
