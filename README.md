@@ -131,20 +131,21 @@ The JET UI and the Reward Service are being developed in parallel independent of
 
 
 
-* Click on each option to show what they do
+* Click on each option to show what they do and highlight the Reward Service option is greyed as it has not be completed
+
+
+
+
+# Step 3
 
 
 
 
 
 
-The application used in this pipeline is a JAX-RS application which is available on GitHub and is imported into Gogs during the setup process:
-[https://github.com/OpenShiftDemos/openshift-tasks](https://github.com/OpenShiftDemos/openshift-tasks/tree/eap-7)
 
-# Prerequisites
 
-* 8+ GB memory available on OpenShift nodes
-* JBoss EAP 7 imagestreams imported to OpenShift (see Troubleshooting section for details)
+
 
 # Setup
 
