@@ -84,6 +84,35 @@ A project manager will be logging in to an Oracle Developer Cloud Service and ma
 *	Some familiarity with Hudson Continuous Integration system
 
 
+
+
+# Iteration 1:   Introducing the Café Supremo Loyalty Application and Oracle Cloud
+
+You are an application developer who will be developing a brand new cloud native loyalty application for Café Supremo, which will be deployed to the Oracle Cloud.
+
+Introduce the application. The application basically consists of two parts:
+
+* The user interface that is built using Oracle JET framework, packaged as a WAR file and deployed to a Java Cloud Service instance
+* The Reward Service is a Microservice written in node.js, packaged as a ZIP file and deployed to an Application Container Cloud Service instance
+
+The JET UI and the Reward Service are being developed in parallel independent of each other, by two different teams.
+
+
+
+![](images/cafehome.png)
+
+
+
+
+* Mirror your mobile phone
+
+* Enter Café Supremo URL - http://xxx.xxx.xxx.xxx/cafesupremo
+
+
+Click on the Menu icon
+
+
+
 The application used in this pipeline is a JAX-RS application which is available on GitHub and is imported into Gogs during the setup process:
 [https://github.com/OpenShiftDemos/openshift-tasks](https://github.com/OpenShiftDemos/openshift-tasks/tree/eap-7)
 
