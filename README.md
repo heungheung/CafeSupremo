@@ -446,10 +446,11 @@ Let’s see how we can automate the CICD process by making a code change in the 
 * Switch to Brackets
 * Open src->js->appController.js
 * Locate line 46
-* Replace false with true on Rewards
+* Replace "false" with "true" on Rewards
 * Save file
 * Click Commit
 * Enter commit message
+* Click Git Push to push change back to DevCS
 
 # Step 33
 
