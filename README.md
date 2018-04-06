@@ -215,7 +215,66 @@ Now that we have imported the source code for our JET UI frontend, we can start 
 
 * Click on New Job
 
+# Step 13
 
+* Enter the build job name
+
+![](images/newjob.png)
+
+* Enter “JETUI_Build” as the job name
+
+# Step 14
+
+* Configure the build job by specifying the Git repo to build from
+
+![](images/jobconfigscm.png)
+
+* Click on Source Control tab
+* Click on “Git” radio box
+* Select “CafeSupremo.git” from the dropdown repositories
+* Click on Add button to add branches
+* Select “master” from the dropdown Branch Specifier
+* Click on Trigger tab
+
+# Step 15
+
+* Enable automated build by setting the trigger to be based on code commit in the Git repo
+
+![](images/jobconfigtrigger.png)
+
+* Check the “Based on SCM polling schedule” radio box
+* Click on Environment tab
+
+# Step 16
+
+* Select the Node.js version use for npm install
+
+![](images/jobconfigenv.png)
+
+* Click on “Use Node.JS version” radio box
+* Select “Node.JS v6.10.0” from the Use Node.JS version dropdown box
+* Click on Build Steps tab
+
+# Step 17
+
+* Define the build steps as a shell script and enter the npm install command and zip to archive the app into a .war file for deployment
+
+![](images/jobconfigbuildsteps.png)
+
+* Click on Add Build Step
+* Select “Execute Shell” from dropdown list
+* Copy and paste the npm install script into the command field
+* Click on Post Build tab
+
+# Step 18
+
+* Define the location of the archive .war file for deployment
+
+![](images/jobconfigpost.png)
+
+* Click on “Archive the artifacts” radio box
+* Enter “target/cafesupremo.war” in the Files To Archive field
+* Click on Save
 
 
 
