@@ -320,7 +320,59 @@ Whilst waiting for the build to complete, we can take a look round other DevCS f
 
 * Click on Logs tab
 * Click on Graph View icon
-*Click on Merge Requests tab
+* Click on Merge Requests tab
+
+# Step 23
+
+* Talk about merging branches and review by peers
+
+![](images/mergerequest.png)
+
+* Click on New Merge Request
+
+# Deploying the JET UI Application
+
+# Step 24
+
+* Create a new deployment for the JET UI to our previously provisioned JCS environment
+
+![](images/deployhome.png)
+
+* Click on New Configuration
+
+# Step 25
+
+* Define the deployment by specifying the name of the configuration, the application name, and target environment
+
+![](images/deployJCS.png)
+
+* Enter “cafesupremo” in the Configuration Name field
+* Enter “cafesupremo” in the Application Name field
+* Click New Deployment Target
+* Enter “192.158.72.189” in the Host field
+* Enter “weblogic” and “welcome1” as the Username and Password
+* Click Find Targets
+
+# Step 26
+
+* Select the cluster to deploy the JETUI app to
+
+![](images/deploycluster.png)
+
+* Click on “demo_cluster” radio box
+* Click OK
+
+# Step 26
+
+* Select the deployment build and automatic deployment
+
+![](images/deploycafe.png)
+
+* Click on “Automatic” radio box
+* Select the default from the dropdown options for Job, Build and Artifact
+* Click Save and Deploy
+
+
 
 
 
