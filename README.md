@@ -143,6 +143,48 @@ Think of yourself as the project manager for the Café Supremo Reward applicatio
 * Enter a description
 * Click Next
 
+# Step 7
+
+* Select an Empty Project for now
+* We will clone an external Git repository where the JET UI is currently stored.
+* Project creation will start upon selecting Finish.
+
+![](images/template.png)
+
+* Select “Empty Project”
+* Click Next
+* Click Finish
+
+# Step 8
+
+* Developer Cloud Service will provision all the tools required for supporting CICD
+* These are open source tools, but out of the box
+* For example, for managing code, we use Git, for build and deploy we use Hudson
+* We also support Maven and Docker
+* For team collaboration we have Wiki, and issue tracking we have Bugzilla
+
+![](images/projectprovision.png)
+
+* Wait for the project provisioning completes
+
+# Cloning the JET UI Git Repository
+
+Since the development of the JET UI has started already and the source code is being version controlled in an external Git repository, we can bring this code under the control within Developer Cloud by cloning the external Git repository.
+
+# Step 9
+
+* We now have an empty project
+* There is no initial repository so we need to either create an initial repository or clone from an existing one
+* We will clone from an existing Git repo with the source code for JET UI
+
+![](images/projecthome.png)
+
+* Click on “+ New Repository”
+
+# Step 10
+
+
+
 
 
 
