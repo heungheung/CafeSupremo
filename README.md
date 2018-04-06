@@ -165,7 +165,7 @@ The JET UI and the Reward Service are being developed in parallel independent of
 
 
 
-[](images/clouddashboard.png)
+![](images/clouddashboard.png)
 
 
 
