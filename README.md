@@ -422,7 +422,7 @@ To enable a developer to develop code and commit it to the Git repository in Dev
 * Switch back to DevCS
 * Copy CafeSupremo.git URL
 * Switch back to Brackets
-* Past URL into Git URL field
+* Paste URL into Git URL field https://cloud.admin@developer.us2.oraclecloud.com/developer78581-gse00014337/s/developer78581-gse00014337_cafesupremo_24888/scm/CafeSupremo.git
 * Enter DevCS username and password
 * Switch back to DevCS
 
