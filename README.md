@@ -457,8 +457,7 @@ Let’s see how we can automate the CICD process by making a code change in the 
 
 ![](images/pushtoremote.png)
 
-Click Git Push
-
+* Click Git Push
 * Switch back to DevCS project home
 
 # Step 34
@@ -485,8 +484,58 @@ Click Git Push
 In a real world scenario where you need to continuously integrate and deploy your application to a test environment, you also need to promote it to the UAT and production environments. You can do this in DevCS by creating multiple deployment configuration for different environments. Release can also be managed and recorded in DevCS. With multiple releases, we also need a better way to manage our code. Branching is common practice in development for releasing multiple versions of an application
 We can scale up or scale out of our JET UI application in JCS as well as the Rewards Microservice in ACCS.
 
+# Step 36
 
+* A release in DevCS is a collection of specific tags or branches of Git repositories, Maven repositories and binaries
+* This allow you to create a release
+* You can download the archive to be deployed manually on premise
 
+![](images/releases.png)
+
+* Click Releases
+
+# Step 37
+
+* There are 3 ways of scaling
+   * Scale Up/Down – changing the Compute shape size
+   * Scale Out – adding more nodes
+   * Auto-Scaling – adding rule to increase or decrease WebLogic managed instances
+   
+![](images/scalingJCS.png)
+
+* Go to the Dashboard
+* Open the JCS Console
+
+# Step 38
+
+* Scaling up and down is even simpler with ACCS
+* Let’s take a look at how we can do this for our Reward microservice
+* Show how to scale up and scale out by increasing the memory and number of instances
+
+![](images/scalingACCS.png)
+
+* Go to the Dashboard
+* Open the ACCS Console
+
+# Step 39
+
+* Check the build and deployment has completed
+* It should say deployed just now
+
+![](images/deploylist.png)
+
+* Switch back to DevCS
+* Go to Café Supremo URL - http://129.156.113.127/cafesupremo
+
+# Step 40
+
+* The Rewards option should now be visible
+* Walkthrough the Rewards option by adding points and redeeming coffees
+
+![](images/redeemoption.png)
+
+* Switch back to your mobile phone
+* Click Rewards option
 
 
 
