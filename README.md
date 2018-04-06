@@ -90,6 +90,10 @@ A project manager will be logging in to an Oracle Developer Cloud Service and ma
 
 You are an application developer who will be developing a brand new cloud native loyalty application for Café Supremo, which will be deployed to the Oracle Cloud.
 
+
+
+# Step 1
+
 Introduce the application. The application basically consists of two parts:
 
 * The user interface that is built using Oracle JET framework, packaged as a WAR file and deployed to a Java Cloud Service instance
@@ -105,11 +109,31 @@ The JET UI and the Reward Service are being developed in parallel independent of
 
 
 * Mirror your mobile phone
-
 * Enter Café Supremo URL - http://xxx.xxx.xxx.xxx/cafesupremo
+* Click on the Menu icon
 
 
-Click on the Menu icon
+
+# Step 2
+
+
+* Show how this JET UI looks like by going into the Discover and Stores options
+* Highlight that the Rewards Service option has not been completed and hence it is greyed out
+* The Reward Service is being implemented as a Microservice in Node.js
+* Since the two services are implemented separately, using different languages and tools, there is very little integration and collaboration between the two teams
+* Code are stored in separate Git repositories and they are built differently, but manually.
+* We will show how you can improve your team’s productivity and quickly rollout new services by adopting CI/CD in Oracle AppDev Platform
+
+
+
+![](images/cafemenu.png)
+
+
+
+* Click on each option to show what they do
+
+
+
 
 
 
