@@ -52,6 +52,7 @@ parameters:
   name: STAGE_PROJECT
   required: true
 objects:
+# dummy edit
 # Pipeline
 - apiVersion: v1
   kind: BuildConfig
